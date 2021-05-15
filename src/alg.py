@@ -334,6 +334,7 @@ class DigTraces(Dig):
 
         dinvs = self.sanitize(dinvs, self.dtraces)
         print(dinvs)
+        return dinvs
 
     def infer_eqts(self, maxdeg, symbols, traces):
         auto_deg = self.get_auto_deg(maxdeg)
