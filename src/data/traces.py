@@ -165,7 +165,7 @@ class Traces(SymbsValsSet):
 
             # instead of doing this, can find out the # 0's in traces
             # the more 0's , the better
-            exprs = sorted(exprs, key=lambda expr: len(Miscs.get_vars(expr)))
+            exprs = sorted(exprs, key=lambda expr: -len(Miscs.get_vars(expr)))
             exprs = set(exprs[:ntraces])
         return exprs
 
